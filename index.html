@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Container{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 40px;
+            background-color: rgb(189, 215, 129);
+            border-radius:15%;
+            width:55vh;
+            padding-right:50px;
+            padding-left:10px;
+            margin:auto;
+            margin-top: 80px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), /* Deeper shadow for floating effect */
+              0 4px 8px rgba(255, 255, 255, 0.2) inset; /* Inner glow effect */
+            backdrop-filter: blur(15px); /* Stronger frosted glass effect */
+            -webkit-backdrop-filter: blur(15px);
+            background: linear-gradient(135deg, rgba(189, 215, 129, 0.3), rgba(255, 255, 255, 0.1)); /* Smooth gradient */
+            border: 1.5px solid rgba(255, 255, 255, 0.3); /* Slightly thicker border */
+             border-radius: 15px; /* Smooth rounded corners */
+             transition: all 0.3s ease-in-out; /* Smooth hover transition */
+        }
+        .Title{
+            text-align: center;
+        }
+        .Form{
+             display:flex;
+            flex-direction:column;
+            justify-content: space-between;
+            align-items: center;
+             height:35vh;
+            padding:20px 30px;
+            
+        }
+        .Email{
+            display:inline-block;
+            margin-bottom: 15px;
+        }
+        .Email-field{
+            display:block;
+        }
+        .Password{
+            display:block;
+        }
+        .Forgot-passsword{
+            position: relative;
+            top: -5px; 
+            text-align: center;
+        }
+        .Forgot-passsword:hover{
+            text-decoration: underline;
+        }
+        .Sign-In{
+            display: block;
+            width: 150px; /* Adjust as needed */
+            margin: 20px auto; /* Centers the button horizontally */
+            padding: 10px 20px;
+            background-color: #00bbff;
+            color: white;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="Container">
+       <h1 class="Title">Login</h1>
+       <div class="Form">
+        <form>
+            <div class="Email">
+            <label>Email:</label>
+            <input type="email" class="Email-field" placeholder="Enter your email" required>
+            </div>
+            <label class="Password">Password:</label>
+            <input type="text" class="Password-field" placeholder="Enter your password" required>
+            
+                <button class="Sign-In">Sign In
+                     </button>
+            
+            <div class="Forgot-passsword">
+            <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+       </div>
+
+       </div>
+    </div>
+</body>
+</html>
